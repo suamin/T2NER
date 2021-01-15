@@ -1,0 +1,8 @@
+{
+    "src_datasets": [
+        "en.news.conll",
+        "de.news.conll"
+    ],
+    "tgt_dataset": "es.news.conll",
+    "do_shared_layer": false
+}

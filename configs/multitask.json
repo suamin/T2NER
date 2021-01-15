@@ -1,0 +1,46 @@
+{
+    "train_datasets": [
+        "en.news.conll",
+        "es.news.conll"
+    ],
+    "valid_datasets": [
+        "es.news.conll"
+    ],
+    "eval_datasets": [
+        "de.news.conll",
+        "nl.news.conll"
+    ],
+    "output_dir": "outputs/temp",
+    "do_train": true,
+    "do_eval": true,
+    "do_predict": false,
+    "encoder_mode": "fintune",
+    "init_checkpoint": null,
+    "use_private_clf": true,
+    "use_shared_clf": true,
+    "use_all_shared_clf": true,
+    "ignore_metadata": false,
+    "add_lang_clf": true,
+    "add_domain_clf": false,
+    "add_type_clf": false,
+    "add_all_outside_clf": true,
+    "add_lm": false,
+    "pooling": "mean",
+    "aux_lmbda": 1.0,
+    "max_num_train_examples": -1,
+    "learning_rate": 3e-5,
+    "lr_scheduler": "linear",
+    "per_device_train_batch_size": 32,
+    "per_device_eval_batch_size": 32,
+    "num_train_epochs": 2.0,
+    "loss_fct": "ce",
+    "evaluate_during_training": true,
+    "valid_metric": "f1",
+    "ignore_heads": false,
+    "overwrite_output_dir": true,
+    "logging_steps": 100,
+    "seed": 42,
+    "warmup_steps": 0.1,
+    "overwrite_cache": false,
+    "max_steps": -1
+}
