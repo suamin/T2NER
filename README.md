@@ -2,11 +2,16 @@
 
 A transformers based transfer learning framework for named entity recognition (NER).
 
-## Requirements
-Please install the HuggingFace [trasnformers](https://github.com/huggingface/transformers) library.
+#### Instructions
+Clone the repository and run the requirements file:
+```
+git clone https://github.com/suamin/t2ner.git
+cd t2ner
+pip install -r requirements
+```
 
-## Preprocessing
-First preprocess the CoNLL format data:
+#### Preprocessing
+Download the NER data of interest and convert into CoNLL format. Example datasets are provided in `data` folder (GermEval 2014, CoNLL-2002). Then, preprocess the CoNLL formatted data:
 
 ```
 python t2ner/preprocess.py \
@@ -16,10 +21,10 @@ python t2ner/preprocess.py \
     --model_type bert \
     --max_len 128 \
     --overwrite_output_dir \
-    --languages en,es,nl
+    --languages de,es,nl
 ```
 
-## Experiments
+#### Experiments
 To run an experiment:
 
 ```
@@ -30,6 +35,6 @@ python t2ner/run.py \
 
 ```
 
-## TODOs
+#### TODOs
 - Add documentation
 - Update README
