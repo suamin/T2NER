@@ -248,10 +248,6 @@ class ModelArguments(ArgumentsBase):
         default=None, 
         metadata={"help": "Where do you want to store the pretrained models downloaded from s3."}
     )
-    evaluate_during_training: bool = field(
-        default=False,
-        metadata={"help": "Evaluate the model during training."}
-    )
     init_checkpoint: str = field(
         default=None,
         metadata={"help": "Initial checkpoint for train/predict."}

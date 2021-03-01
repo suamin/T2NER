@@ -21,7 +21,7 @@ python t2ner/preprocess.py \
     --model_type bert \
     --max_len 128 \
     --overwrite_output_dir \
-    --languages de,es,nl
+    --languages es,nl
 ```
 
 #### Experiments

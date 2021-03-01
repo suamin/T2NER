@@ -442,7 +442,7 @@ class BaseTrainer(ABC, TrainInferenceUtils):
     
     def after_epoch(self):
         model = self._models["model"]
-        if self.model_args.evaluate_during_training:
+        if self.training_args.evaluate_during_training:
             results = self.run_eval(
                 model, 
                 loss_only=False, 
@@ -510,7 +510,7 @@ class BaseTrainer(ABC, TrainInferenceUtils):
            self.global_step % self.training_args.logging_steps == 0 and \
            self.global_step > 1:
             self.log(logs)
-            if self.model_args.evaluate_during_training and evaluate:
+            if self.training_args.evaluate_during_training and evaluate:
                 results = self.run_eval(model, eval_datasets=self.validation_datasets)
                 self.stats["step_eval_log"].append(results)
                 self.check_and_save_best_model(model, results)

@@ -110,34 +110,3 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     main(args)
-
-"""
-
-python run.py \
-    --exp_type ner \
-    --base_json configs/base.json \
-    --exp_json configs/ner.json
-
-export BASE_DIR=/netscratch/samin/projects/uned
-
-srun --container-image=/netscratch/enroot/dlcc_pytorch_20.07.sqsh \
-    --container-mounts=/netscratch:/netscratch \
-    --gpus=2 \
-    /netscratch/samin/dev/miniconda3/envs/nlp37g/bin/python \
-    /netscratch/samin/projects/uned/run.py \
-    --exp_type ner \
-    --base_json /netscratch/samin/projects/uned/configs/base.json \
-    --exp_json /netscratch/samin/projects/uned/configs/ner.json
-
-srun --container-image=/netscratch/enroot/dlcc_pytorch_20.07.sqsh \
-    --container-mounts=/netscratch:/netscratch \
-    /netscratch/samin/dev/miniconda3/envs/nlp37g/bin/python \
-    /netscratch/samin/projects/uned/t2ner/preprocess.py \
-    --data_dir /netscratch/samin/projects/uned/data/ner \
-    --output_dir /netscratch/samin/projects/uned/data/ner/processed \
-    --model_name_or_path bert-base-multilingual-cased \
-    --model_type bert \
-    --max_len 128 \
-    --overwrite_output_dir \
-    --languages en,es,de,nl
-"""

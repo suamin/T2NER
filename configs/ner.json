@@ -1,12 +1,11 @@
 {
-    "train_dataset": "en.news.conll",
+    "train_dataset": "es.news.conll",
     "eval_datasets": [
-        "es.news.conll",
         "nl.news.conll"
     ],
     "output_dir": "outputs/temp",
-    "do_train": false,
-    "do_eval": false,
+    "do_train": true,
+    "do_eval": true,
     "do_predict": true,
     "encoder_mode": "fintune",
     "init_checkpoint": null,
@@ -20,7 +19,7 @@
     "valid_metric": "f1",
     "ignore_heads": false,
     "overwrite_output_dir": true,
-    "logging_steps": 100000,
+    "logging_steps": 10000,
     "seed": 42,
     "warmup_steps": 0.1,
     "overwrite_cache": false
