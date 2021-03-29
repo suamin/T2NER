@@ -38,3 +38,6 @@ python t2ner/run.py \
 #### TODOs
 - Add documentation
 - Update README
+
+## Acknowledgements 
+The algorithmic components of the framework largely follows (Transfer-Learning-Library)[https://github.com/thuml/Transfer-Learning-Library] and (Dassl.pytorch)[https://github.com/KaiyangZhou/Dassl.pytorch], if you find `t2ner` useful, please also consider citing these works.
