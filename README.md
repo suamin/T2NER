@@ -3,6 +3,7 @@
 A transformers based transfer learning framework for named entity recognition (NER).
 
 #### Instructions
+
 Clone the repository and run the requirements file:
 ```
 git clone https://github.com/suamin/t2ner.git
@@ -11,6 +12,7 @@ pip install -r requirements
 ```
 
 #### Preprocessing
+
 Download the NER data of interest and convert into CoNLL format. Example datasets are provided in `data` folder (GermEval 2014, CoNLL-2002). Then, preprocess the CoNLL formatted data:
 
 ```
@@ -25,6 +27,7 @@ python t2ner/preprocess.py \
 ```
 
 #### Experiments
+
 To run an experiment:
 
 ```
@@ -54,7 +57,7 @@ If you find our framework useful, please consider citing:
 }
 ```
 
-Please also consider checking our related work using T2NER for few-shot de-identification of cross-lingual clinical notes:
+**Update (07/04/2022)**: Check our follow-up work using `T2NER` for few-shot cross-lingual clinical notes de-identification:
 
 ```bibtex
 @inproceedings{amin-etal-2022-fewshot,
@@ -74,4 +77,5 @@ Please also consider checking our related work using T2NER for few-shot de-ident
 ```
 
 ## Acknowledgements 
+
 The algorithmic components of the framework largely follows [Transfer-Learning-Library](https://github.com/thuml/Transfer-Learning-Library) and [Dassl.pytorch](https://github.com/KaiyangZhou/Dassl.pytorch), if you find `t2ner` useful, please also consider citing these works.
