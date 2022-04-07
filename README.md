@@ -35,12 +35,11 @@ python t2ner/run.py \
 
 ```
 
-#### TODOs
-- Add documentation
-- Update README
-
 ## Citation
-```
+
+If you find our framework useful, please consider citing:
+
+```bibtex
 @inproceedings{amin-neumann-2021-t2ner,
     title = "{T}2{NER}: Transformers based Transfer Learning Framework for Named Entity Recognition",
     author = "Amin, Saadullah  and
@@ -52,6 +51,25 @@ python t2ner/run.py \
     publisher = "Association for Computational Linguistics",
     url = "https://www.aclweb.org/anthology/2021.eacl-demos.25",
     pages = "212--220"
+}
+```
+
+Please also consider checking our related work using T2NER for few-shot de-identification of cross-lingual clinical notes:
+
+```bibtex
+@inproceedings{amin-etal-2022-fewshot,
+    title = "Few-Shot Cross-lingual Transfer for Coarse-grained De-identification of Code-Mixed Clinical Texts",
+    author = "Amin, Saadullah and 
+    Pokaratsiri Goldstein, Noon and 
+    K. Wixted, Morgan and 
+    García-Rudolph, Alejandro and 
+    Martínez-Costa, Catalina and 
+    Neumann, Günter",
+    booktitle = "Proceedings of the 21st Workshop on Biomedical Language Processing",
+    month = may,
+    year = "2022",
+    address = "Online",
+    publisher = "Association for Computational Linguistics"
 }
 ```
 
